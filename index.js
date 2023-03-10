@@ -8,4 +8,8 @@ bot.on('message', (ctx) => {
   ctx.reply('You said: ' + ctx.message.text);
 });
 
-bot.launch();
+bot.launch({
+Webhook: {
+    port: 8080
+  }
+});
